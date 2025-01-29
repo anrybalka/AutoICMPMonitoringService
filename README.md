@@ -14,7 +14,14 @@
    - Скопируйте содержимое папки `Release` в созданную папку:  
      `C:\Auto ICMP monitoring service\Release`
 
-2. **Подготовка таблицы устройств:**
+2. ## Установка службы
+
+1. Откройте командную строку (CMD) от имени администратора.
+2. Выполните команду для установки службы:  
+   ```cmd
+   "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\InstallUtil.exe" "C:\Auto ICMP monitoring service\Release\AutoICMPMonitoringService.exe"
+
+3. **Подготовка таблицы устройств:**
    - В папке `C:\Auto ICMP monitoring service` создайте или поместите `.xlsx` таблицу с устройствами для мониторинга.
    - Таблица должна содержать три столбца:
      1. Название устройства (не должно быть пустым).
@@ -23,7 +30,7 @@
    - Пример таблицы:  
      `C:\Auto ICMP monitoring service\Камеры.xlsx`
 
-3. **Настройка конфигурации:**
+4. **Настройка конфигурации:**
    - При первом запуске службы автоматически создается файл `Config.json` в папке `C:\Auto ICMP monitoring service`.
    - Параметры конфигурации:
      - `tokenBot`: Токен Telegram-бота для отправки уведомлений.
@@ -31,9 +38,4 @@
      - `recheckCount`: Количество повторных проверок, если устройство недоступно.
      - `tickTimeSec`: Интервал (в секундах) между проверками устройств.
 
-## Установка службы
 
-1. Откройте командную строку (CMD) от имени администратора.
-2. Выполните команду для установки службы:  
-   ```cmd
-   "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\InstallUtil.exe" "C:\Auto ICMP monitoring service\Release\AutoICMPMonitoringService.exe"
