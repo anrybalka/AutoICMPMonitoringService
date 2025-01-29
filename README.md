@@ -14,10 +14,10 @@
    - Скопируйте содержимое папки `Release` в созданную папку:  
      `C:\Auto ICMP monitoring service\Release`
 
-2. ## Установка службы
+2. **Установка службы**
 
-1. Откройте командную строку (CMD) от имени администратора.
-2. Выполните команду для установки службы:  
+ - Откройте командную строку (CMD) от имени администратора.
+ - Выполните команду для установки службы:  
    ```cmd
    "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\InstallUtil.exe" "C:\Auto ICMP monitoring service\Release\AutoICMPMonitoringService.exe"
 
